@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+    <frame title="Java俄罗斯方块" windowUp="32" width="1178" height="692" padding ="16" border = "7" >
+        <layer className="ui.LayerBackground" x="0" y="0" w="0" h="0"/>
+        <layer className="ui.LayerDataBase" x="40" y="32" w="334" h="279"/>
+        <layer className="ui.LayerDisk" x="40" y="343" w="334" h="279"/>
+        <layer className="ui.LayerGame" x="414" y="32" w="334" h="590"/>
+        <layer className="ui.LayerButton" x="788" y="32" w="334" h="124"/>
+        <layer className="ui.LayerNext" x="788" y="188" w="176" h="148"/>
+        <layer className="ui.LayerLevel" x="964" y="188" w="158" h="148"/>
+        <layer className="ui.LayerPoint" x="788" y="368" w="334" h="160"/>
+        <layer className="ui.LayerAbout" x="788" y="560" w="334" h="62"/>
+    </frame>
+    <system>
+
+    </system>
+    <data>
+        <dataA className="dao.DataBase">
+            <param key="driver" value="com.mysql.cj.jdbc.Driver"/>
+            <param key="dbUrl" value="jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"/>
+            <param key="dbUser" value="root"/>
+            <param key="dbPwd" value="231436"/>
+        </dataA>
+        <dataB className="dao.DataDisk">
+            <param key="path" value="save/recode.dat"/>
+        </dataB>
+    </data>
+</game>
